@@ -1,31 +1,126 @@
 :root {
-  --header-height: 60px;
+  --header-height: 72px;
+  --h1-font-size: 36px;
+  --h2-font-size: 48px;
+  --a-font-size: 24px;
+  --p-font-size: 24px;
+  --button-font-size: 20px;
+  --section-height: calc(100vh - var(--header-height));
+  --top-bar-standard-padding: calc(
+    calc(var(--header-height) - var(--h1-font-size)) / 2
+  );
+  --section-internal-padding: 32px;
+  --section-internal-gap: 16px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
+  width: 100vw;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+body:nth-child(n) {
+  width: 100%;
+}
+
+/* ----- Top Bar ----- */
 header {
-  width: 100vw;
   height: var(--header-height);
+  padding-left: var(--top-bar-standard-padding);
+  padding-right: var(--top-bar-standard-padding);
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   background-color: orange;
   top: 0;
   left: 0;
+  right: 0;
 }
 
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+a {
+  font-size: var(--a-font-size);
+}
+
+p {
+  font-size: var(--p-font-size);
+}
+
+.div-top-bar-links {
+  display: flex;
+  flex-direction: row;
+  gap: calc(calc(var(--header-height) - var(--h1-font-size)) / 2);
+}
+/* ------------------- */
+
+/* ----- Main ----- */
 main {
   margin-top: var(--header-height);
-  background-color: #550000;
+}
+main > section:nth-child(2n + 1) {
+  background-color: black;
+}
+main > section:nth-child(2n) {
+  background-color: #202020;
 }
 
-session {
-  width: 100vw;
-  height: calc(100vh - var(--header-height));
+section {
+  width: 100%;
+  height: var(--section-height);
+  padding: var(--section-internal-padding);
 }
+
+.section-hero {
+  display: grid;
+  grid-template-areas: "image info";
+  grid-template-columns: auto auto;
+  grid-template-rows: calc(
+    var(--section-height) - calc(2 * var(--section-internal-padding))
+  );
+  gap: var(--section-internal-padding);
+}
+
+.section-hero > img {
+  grid-area: image;
+  height: 100%;
+  width: calc(calc(var(--section-height) / 4) * 3);
+}
+
+.section-hero > .div-content-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-internal-gap);
+  justify-content: center;
+}
+
+.section-hero > .div-content-hero > button {
+  width: fit-content;
+  color: white;
+  background-color: black;
+  padding: var(--section-internal-gap);
+  border: 2px solid white;
+  border-radius: 50vh;
+  font-size: var(--button-font-size);
+}
+/* ---------------- */
+
+/* ----- Footer ----- */
+footer {
+}
+/* ------------------ */
