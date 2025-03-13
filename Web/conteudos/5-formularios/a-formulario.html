@@ -18,5 +18,56 @@
       <input type="reset" value="Apagar" />
       <input type="submit" value="Enviar" />
     </form>
+
+    <h3>1º. Qual o curso que está estudando?</h3>
+    <form>
+      <input type="radio" name="1" value="cg" />Computação Gráfica<br />
+      <br />
+      <input type="radio" name="1" value="ds" />Desenvolvimento de Sistemas<br />
+      <br />
+      <input type="radio" name="1" value="in" />Informática<br />
+      <br />
+      <input type="radio" name="1" value="pjd" />Programação de Jogos<br />
+      <br />
+      <input type="radio" name="1" value="rc" />Rede de Computadores<br />
+      <br />
+    </form>
+
+    <h3>1º. Qual o curso que está estudando?</h3>
+    <form>
+      <input type="checkbox" name="disciplinas" value="html" checked /> HTML
+      <br />
+      <br />
+      <input type="checkbox" name="disciplinas" value="css" /> CSS <br />
+      <br />
+      <input type="checkbox" name="disciplinas" value="php" /> PHP <br />
+      <br />
+      <input type="checkbox" name="disciplinas" value="banco" /> Banco de
+      Dados<br />
+      <br />
+      <input type="checkbox" name="disciplinas" value="java" /> JAVA <br />
+      <br />
+      <input type="checkbox" name="disciplinas" value="redes" /> Redes de
+      Computadores <br />
+      <br />
+
+      <fieldset>
+        <legend>Legenda:</legend>
+        <label>Nível de Acesso</label>
+        <select name="nivel_acesso">
+          <option value="">Selecione</option>
+          <option value="1">Administrador</option>
+          <option value="2">Financeiro</option>
+          <option value="3">Cliente</option>
+        </select>
+        <br />
+        <br />
+
+        <label>Mensagem</label>
+        <textarea name="mensagem" placeholder="Conteúdo da mensagem"></textarea>
+        <br />
+        <br />
+      </fieldset>
+    </form>
   </body>
 </html>
