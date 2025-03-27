@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(52, 52, 220, 0.5),
+      rgba(13, 5, 131, 0.8)
+    ),
+    url(https://as2.ftcdn.net/v2/jpg/10/35/04/09/1000_F_1035040971_BGjQ2oB99UvkjM9yVL0Db60zgiEiFoo6.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page p {
+  /* margin-top: 500px; */
+  color: oldlace;
+  font-size: 50px;
+}
