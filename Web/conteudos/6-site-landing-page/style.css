@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  background-image: linear-gradient(
+      rgba(52, 52, 220, 0.5),
+      rgba(13, 5, 131, 0.8)
+    ),
+    url(laptop.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page p {
+  /* margin-top: 500px; */
+  color: oldlace;
+  font-size: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  background-color: #dabaff;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text img {
+  height: 300px;
+  width: 300px;
+  border-radius: 75px;
+}
+
+.text p {
+  width: 400px;
+}
+
+.double-collumns {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.double-collumns div {
+  height: 100vh;
+  width: 50vw;
+}
+
+.double-collumns div img {
+  height: 100%;
+  width: 100%;
+}
+
+.double-collumns-text {
+  border: rgba(0, 0, 0, 0) solid 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
