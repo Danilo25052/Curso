@@ -1,0 +1,113 @@
+:root {
+  --margem-lateral: 36px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-left: var(--margem-lateral);
+  margin-right: var(--margem-lateral);
+}
+
+#video-de-fundo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.links a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.img-cap-mario {
+  width: 46px;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes-sociais img {
+  max-height: 20px;
+  max-width: 22px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 434px;
+  height: 100%;
+}
+
+main div:first-child p {
+  font-size: 16px;
+  color: white;
+}
+
+main div:first-child button {
+  padding: 24px 32px 24px 32px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+main div:first-child div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main div:first-child div .btn-assistir {
+  background-color: #c51313;
+  border-color: #a52021;
+  color: white;
+}
+
+main div:first-child div .btn-comprar {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #528856;
+  color: white;
+}
+
+main div:last-child {
+  width: fit-content;
+  height: 100%;
+}
+
+.img-logo-filme {
+  width: 360px;
+}
+
+.img-mario-e-luigi {
+  width: 500px;
+}

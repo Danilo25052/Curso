@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.0"
+   width="128.000000pt"
+   height="128.000000pt"
+   viewBox="0 0 128.000000 128.000000"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg1"
+   sodipodi:docname="facebook-logo.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="2.0757451"
+     inkscape:cx="57.328812"
+     inkscape:cy="90.810765"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <circle
+     style="fill:#000000;fill-opacity:1;stroke-width:8.27658;stroke-linecap:square;stroke-miterlimit:0"
+     id="path2"
+     cx="64"
+     cy="64"
+     r="64" />
+  <g
+     transform="matrix(0.1017978,0,0,-0.10226973,-1.2241388,129.53405)"
+     fill="#000000"
+     stroke="none"
+     id="g2"
+     style="fill:#feffff;fill-opacity:1">
+    <path
+       d="M 505,1256 C 203,1187 -4,913 13,604 22,445 83,309 196,196 268,124 341,78 442,42 505,20 531,16 635,15 c 97,0 133,4 190,22 73.45613,23.337624 444.4197,158.9375 444.4197,600.29013 0,110 -16.5493,148.45264 -31.4197,200.70987 -37,101 -82,174 -154,246 -117,117 -253,176 -419,182 -62,2 -123,-1 -160,-10 z M 820,965 v -65 h -44 c -70,0 -76,-5 -76,-66 v -54 h 61 62 l -7,-46 c -3,-26 -6,-57 -6,-70 0,-22 -4,-24 -55,-24 H 700 V 445 250 h -80 -80 v 195 195 h -40 -40 v 70 70 h 40 40 v 73 c 0,83 19,125 72,157 26,16 51,20 121,20 h 87 z"
+       id="path1"
+       sodipodi:nodetypes="ccscccccsccccssccccsscccccccccccccscscc"
+       style="fill:#feffff;fill-opacity:1" />
+  </g>
+</svg>
