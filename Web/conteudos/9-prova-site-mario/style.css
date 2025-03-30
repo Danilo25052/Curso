@@ -2,17 +2,19 @@
   --margem-lateral: 36px;
 }
 
-* {
+*,
+#video-de-fundo {
   padding: 0px;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+body > * {
   margin-left: var(--margem-lateral);
   margin-right: var(--margem-lateral);
 }
 
+/* ----- background-video.mp4 ----- */
 #video-de-fundo {
   position: fixed;
   left: 0;
@@ -22,6 +24,7 @@ body {
   z-index: -999;
 }
 
+/* ----- Top Bar ----- */
 header {
   display: flex;
   justify-content: space-between;
@@ -29,22 +32,34 @@ header {
   height: 64px;
 }
 
-.links {
+header li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* --- Links --- */
+.div-links {
   display: flex;
   align-items: center;
   gap: 28px;
-}
-
-.links a {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
 }
 
 .img-cap-mario {
   width: 46px;
 }
 
+.div-links a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.div-links a:hover {
+  color: #c51313;
+  font-weight: bold;
+}
+
+/* --- Redes Sociais --- */
 .redes-sociais {
   display: flex;
   align-items: center;
@@ -56,12 +71,15 @@ header {
   max-width: 22px;
 }
 
+/* ----- Corpo da Página ----- */
 main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
+/* --- Coluna da Esquerda --- */
 main div:first-child {
   display: flex;
   flex-direction: column;
@@ -70,21 +88,26 @@ main div:first-child {
   height: 100%;
 }
 
+.img-logo-filme {
+  width: 280px;
+}
+
 main div:first-child p {
   font-size: 16px;
   color: white;
+}
+
+/* - Botões - */
+main div:first-child div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 main div:first-child button {
   padding: 24px 32px 24px 32px;
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
-}
-
-main div:first-child div {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 main div:first-child div .btn-assistir {
@@ -99,15 +122,12 @@ main div:first-child div .btn-comprar {
   color: white;
 }
 
+/* --- Coluna da Direita --- */
 main div:last-child {
   width: fit-content;
   height: 100%;
 }
 
-.img-logo-filme {
-  width: 360px;
-}
-
 .img-mario-e-luigi {
-  width: 500px;
+  width: 520px;
 }
