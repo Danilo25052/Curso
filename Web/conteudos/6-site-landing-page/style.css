@@ -46,13 +46,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
 .text img {
   height: 300px;
   width: 300px;
-  border-radius: 75px;
+  border-radius: 120px;
 }
 
 .text p {
@@ -61,13 +62,13 @@ main {
 
 .double-collumns {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .double-collumns div {
   height: 100vh;
-  width: 50vw;
+  width: 50%;
 }
 
 .double-collumns div img {
@@ -79,4 +80,14 @@ main {
   border: rgba(0, 0, 0, 0) solid 20px;
   box-sizing: border-box;
   text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+  background-image: linear-gradient(#361dcb, #15048e);
 }

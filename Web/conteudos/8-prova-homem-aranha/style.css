@@ -1,0 +1,42 @@
+/* https://www.youtube.com/watch?v=McPdzhLRzCg */
+/* https://www.youtube.com/watch?v=JuZABF3bEdg */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+.section-slider {
+  position: relative;
+  height: 600px;
+  width: 500px;
+}
+
+.slider-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: grid;
+  grid-template-rows: repeat(4, 100%);
+  height: 100%;
+  width: 100%;
+}
+
+.slider-navigation {
+}
+
+.slider-navigation button {
+  height: 16px;
+  width: 16px;
+  border-radius: 50vh;
+  display: inline-block;
+}
