@@ -91,15 +91,15 @@ header {
 .div-profile-left {
   display: flex;
   flex-direction: row;
-  width: 592px;
+  max-width: 592px;
   height: fit-content;
   align-items: center;
   gap: 32px;
 }
 
 .div-profile-left > img {
-  height: 176px;
-  width: 176px;
+  max-height: 176px;
+  max-width: 176px;
 }
 
 .div-profile-text {
@@ -126,6 +126,19 @@ header {
 .div-profile-info > img {
   width: 24px;
   height: 24px;
+}
+
+/* --- section-images-grid --- */
+.section-images-grid {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.section-images-grid > * {
+  aspect-ratio: 1 / 1;
+  background-color: var(--text-color-primary);
 }
 
 /* ----- Footer ----- */

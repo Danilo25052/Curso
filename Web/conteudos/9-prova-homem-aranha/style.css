@@ -45,12 +45,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .slider-navigation > a {
-  height: 24px;
-  width: 24px;
+  height: 48px;
+  width: 48px;
   border-radius: 50vh;
   background-color: pink;
 }
@@ -58,4 +58,5 @@ main {
 .slider-navigation > a > * {
   height: inherit;
   width: inherit;
+  border-radius: inherit;
 }
