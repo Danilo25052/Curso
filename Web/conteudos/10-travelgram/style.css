@@ -17,7 +17,6 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   background-color: var(--background-color);
   color: var(--text-color-secundary);
   font-family: "Poppins", sans-serif;
@@ -26,6 +25,10 @@ body {
 header,
 .section-profile {
   background-color: var(--surface-color);
+}
+
+img {
+  object-fit: cover;
 }
 
 /* ----- Texts ----- */
@@ -69,14 +72,25 @@ header {
   align-items: center;
 }
 
-.header-navigation > a {
-  color: var(--text-color-secundary);
-  height: 16px;
+.header-navigation > img {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
 }
 
-.header-navigation img {
+.header-navigation > a {
+  color: var(--text-color-secundary);
+  font-size: 16px;
+}
+
+.header-navigation > a:has(img) {
+  color: var(--text-color-secundary);
   height: 40px;
+}
+
+.header-navigation > a > img {
   width: 40px;
+  height: 40px;
   border-radius: 50vh;
 }
 
@@ -86,20 +100,25 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 32px;
+  height: fit-content;
 }
 
 .div-profile-left {
   display: flex;
   flex-direction: row;
-  max-width: 592px;
+  width: 592px;
   height: fit-content;
   align-items: center;
   gap: 32px;
 }
 
 .div-profile-left > img {
-  max-height: 176px;
+  height: 176px;
+  width: 176px;
   max-width: 176px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50vh;
 }
 
 .div-profile-text {
@@ -123,23 +142,40 @@ header {
   gap: 8px;
 }
 
-.div-profile-info > img {
-  width: 24px;
-  height: 24px;
-}
-
 /* --- section-images-grid --- */
 .section-images-grid {
   display: grid;
   /* grid-template-columns: auto auto auto auto; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 24px 32px;
   gap: 32px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 
-.section-images-grid > * {
+.section-images-grid > img {
+  width: 100%;
+  max-width: 100%;
   aspect-ratio: 1 / 1;
   background-color: var(--text-color-primary);
 }
 
 /* ----- Footer ----- */
-/* ---  --- */
+footer {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+}
+
+footer > div {
+  width: 297px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div > * {
+  width: fit-content;
+  height: fit-content;
+}
