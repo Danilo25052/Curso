@@ -80,6 +80,20 @@ header {
   padding: 4px;
 }
 
+.header-navigation > *:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.header-navigation > a:has(svg) {
+  height: 24px;
+}
+
+.header-navigation a svg {
+  height: 24px;
+  width: 24px;
+}
+
 .header-navigation > a {
   color: var(--text-color-secundary);
   font-size: 16px;
