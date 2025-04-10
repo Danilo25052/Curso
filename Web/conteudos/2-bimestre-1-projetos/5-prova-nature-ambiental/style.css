@@ -79,9 +79,10 @@ main {
   font-size: 16px;
 }
 
-.section-two button {
+.section-two a {
   background-color: #f36e20;
   color: white;
+  text-decoration: none;
   padding: 8px 14px;
   border: none;
   border-radius: 8px;
@@ -139,7 +140,7 @@ main {
   width: 50px;
 }
 
-.section-four > div > p {
+.section-four > div > span {
   font-size: 20px;
 }
 
