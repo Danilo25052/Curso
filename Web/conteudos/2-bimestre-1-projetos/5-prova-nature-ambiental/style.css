@@ -12,10 +12,7 @@ header {
   padding: 20px 90px;
   background-color: #f36e20;
   color: white;
-}
-
-header span {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 header ul {
@@ -26,8 +23,12 @@ header ul {
 }
 
 header a {
-  font-size: 10px;
+  font-size: 18px;
   text-decoration: none;
+}
+
+header a:hover {
+  font-weight: bold;
 }
 
 main {
@@ -38,7 +39,8 @@ main {
 
 .section-hero {
   height: 100vmin;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   background-image: url("./assets/Green-Moss-Photo.jpg");
@@ -47,15 +49,17 @@ main {
 }
 
 .section-hero h1 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .section-hero h2 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .section-two {
   gap: 10px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -66,12 +70,13 @@ main {
   width: fit-content;
 }
 
-.section-two h2 {
-  font-size: 18px;
+.section-two h2,
+.section-three h2 {
+  font-size: 24px;
 }
 
 .section-two p {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .section-two button {
@@ -79,18 +84,99 @@ main {
   color: white;
   padding: 8px 14px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 .section-three {
+  display: flex;
+  flex-direction: row;
   background-color: #f5f5f5;
   padding: 45px 140px;
-  flex-direction: row;
+  gap: 16px;
 }
 
 .section-three > div:nth-child(1) {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
+
 .section-three > div:nth-child(2) {
   width: 50%;
+}
+
+.section-three img {
+  max-width: 100%;
+}
+
+.section-four {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 45px 140px;
+  gap: 12px;
+}
+
+.section-four > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+}
+
+.section-four > div > img {
+  height: 50px;
+  width: 50px;
+}
+
+.section-four > div > p {
+  font-size: 20px;
+}
+
+.section-four > div > p {
+  font-size: 16px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  background-color: #f56d21;
+  color: white;
+  padding: 45px 100px;
+  gap: 20px;
+}
+
+.footer-info span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-info p,
+.footer-info a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-info > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
 }
