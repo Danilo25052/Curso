@@ -68,6 +68,7 @@ main {
 
 .section-two > * {
   width: fit-content;
+  max-width: 800px;
 }
 
 .section-two h2,
