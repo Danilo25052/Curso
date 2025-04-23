@@ -1,0 +1,45 @@
+:root {
+  --background-color-1: #0f0f0f;
+  --background-color-2: #212121;
+  --background-color-3: #282828;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: var(--background-color-1);
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "topbar"
+    "main";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  grid-area: topbar;
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "sidemenu videoslist";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 1fr;
+}
+
+#side-menu {
+  grid-area: sidemenu;
+  background-color: yellow;
+}
+
+#section-videos-list {
+  grid-area: videoslist;
+  background-color: red;
+}

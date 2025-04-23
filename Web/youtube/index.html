@@ -4,63 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <script src="./js/auxiliares.js"></script>
   <body>
-    <header>
-      <section>
-        <button></button>
-        <a href="#"></a>
+    <header id="top-bar">
+      <section id="section-menu-toggle">
+        <button id="button-menu-toggle">
+          <img
+            src="./assets/svg/list.svg"
+            alt="Botão Menu"
+            onload="fetchSvg(self)"
+          />
+        </button>
+        <a href="#" id="a-youtube-logo"></a>
       </section>
-      <section>
-        <div>
-          <div>
+
+      <section id="section-search">
+        <div id="div-search-box">
+          <div id="div-search-bar">
             <input type="text" />
-            <button></button>
+            <button id="button-search">
+              <img
+                src="./assets/svg/search.svg"
+                alt="Botão de Pesquisa"
+                onload="fetchSvg(self)"
+              />
+            </button>
           </div>
-          <button></button>
+          <button id="button-mic">
+            <img
+              src="./assets/svg/mic-fill.svg"
+              alt="Botão de Microfone"
+              onload="fetchSvg(self)"
+            />
+          </button>
         </div>
-        <button></button>
+
+        <button id="button-create">
+          <img
+            src="./assets/svg/plus-lg.svg"
+            alt="Botão Criar"
+            onload="fetchSvg(self)"
+          />
+          <span>Criar</span>
+        </button>
       </section>
-      <section>
-        <button></button>
-        <button></button>
-        <button></button>
+
+      <section id="section-profile">
+        <button>
+          <img src="" alt="Botão" onload="fetchSvg(self)" />
+        </button>
+        <button><img src="" alt="Botão" onload="fetchSvg(self)" /></button>
+        <button><img src="" alt="Botão" onload="fetchSvg(self)" /></button>
       </section>
     </header>
+
     <main>
-      <section id="section-filters">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+      <section id="side-menu">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
       </section>
-      <section class="section-ads"></section>
-      <section class="section-videos">
-        <div class="div-video-card"></div>
-        <div class="div-video-card"></div>
-        <div class="div-video-card"></div>
-        <div class="div-video-card"></div>
-      </section>
-      <section class="section-shorts">
-        <div class="div-shorts-card"></div>
-        <div class="div-shorts-card"></div>
-        <div class="div-shorts-card"></div>
-        <div class="div-shorts-card"></div>
-      </section>
-      <section class="section-videos">
-        <div class="div-video-card"></div>
-        <div class="div-video-card"></div>
-        <div class="div-video-card"></div>
-        <div class="div-video-card"></div>
+
+      <section id="section-videos-list">
+        <section id="section-filters">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </section>
+
+        <section class="section-ads"></section>
+
+        <section class="section-videos">
+          <div class="div-video-card"></div>
+          <div class="div-video-card"></div>
+          <div class="div-video-card"></div>
+          <div class="div-video-card"></div>
+        </section>
+
+        <section class="section-shorts">
+          <div class="div-shorts-card"></div>
+          <div class="div-shorts-card"></div>
+          <div class="div-shorts-card"></div>
+          <div class="div-shorts-card"></div>
+        </section>
+
+        <section class="section-videos">
+          <div class="div-video-card"></div>
+          <div class="div-video-card"></div>
+          <div class="div-video-card"></div>
+          <div class="div-video-card"></div>
+        </section>
       </section>
     </main>
-    <aside>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </aside>
   </body>
 </html>
