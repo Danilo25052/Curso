@@ -1,0 +1,66 @@
+/* https://www.youtube.com/watch?v=McPdzhLRzCg */
+/* https://www.youtube.com/watch?v=JuZABF3bEdg */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background-image: url(./assets/banner.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.section-slider {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: 600px;
+  padding: 12px;
+  gap: 16px;
+}
+
+.slider {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.slider img {
+  height: inherit;
+}
+
+.slider-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.slider-navigation > a {
+  height: 48px;
+  width: 48px;
+  border-radius: 50vh;
+  background-color: pink;
+}
+
+.slider-navigation > a > * {
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+}

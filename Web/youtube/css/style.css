@@ -27,6 +27,12 @@ header {
   justify-content: space-between;
 }
 
+#top-bar > * {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
 main {
   display: grid;
   grid-template-areas: "sidemenu videoslist";
