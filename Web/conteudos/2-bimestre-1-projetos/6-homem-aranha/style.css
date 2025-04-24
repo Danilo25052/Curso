@@ -1,66 +1,208 @@
-/* https://www.youtube.com/watch?v=McPdzhLRzCg */
-/* https://www.youtube.com/watch?v=JuZABF3bEdg */
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  background-image: url(./assets/banner.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   color: white;
+  background-image: url(./assets/banner.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+}
+
+header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  gap: 60px;
+  height: fit-content;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+header .a-marvel-logo {
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -4px;
+}
+
+header ul {
+  display: inline-flex;
+  gap: 60px;
+  list-style: none;
+  align-items: center;
+}
+
+header ul a {
+  color: white;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+header ul a:hover {
+  color: red;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 }
 
-.section-slider {
+main > .info {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+header,
+main > .info > * {
+  padding-left: 80px;
+}
+
+main > .info > h2,
+main > .info > span {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3.75vh;
+}
+
+main > .info > .img-movie-logo {
+  align-self: center;
+  padding: 0px;
+  max-width: 100%;
+}
+
+main > .info > h2 {
+  font-size: 45px;
+}
+
+main > .info > p {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+main > .info > span {
+  font-size: 22px;
+}
+
+.watch-trailer {
+  border: none;
+  height: fit-content;
+  width: fit-content;
+  background-color: transparent;
+}
+
+.watch-trailer > img {
+  width: 250px;
+}
+
+main {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main > .slider {
   display: flex;
   flex-direction: row;
   width: fit-content;
-  height: 600px;
-  padding: 12px;
+  height: 500px;
   gap: 16px;
 }
 
-.slider {
+main > .slider > .div-slides {
   height: inherit;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.slider img {
+main > .slider > .div-slides > img {
   height: inherit;
 }
 
-.slider-navigation {
+main > .slider > .div-slider-navigator {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: fit-content;
+  align-items: center;
   justify-content: center;
-  gap: 24px;
 }
 
-.slider-navigation > a {
-  height: 48px;
-  width: 48px;
+main > .slider > .div-slider-navigator > a {
+  opacity: 80%;
+}
+
+main > .slider > .div-slider-navigator > a:hover {
+  opacity: 100%;
+  transform: scale(120%);
+}
+
+main > .slider > .div-slider-navigator > a > .img-icon-slider-navigator {
+  width: 46px;
+  height: 46px;
+  border: none;
   border-radius: 50vh;
-  background-color: pink;
+  position: absolute;
+  transform: translateX(-60px);
+  margin-top: 10px;
 }
 
-.slider-navigation > a > * {
-  height: inherit;
-  width: inherit;
-  border-radius: inherit;
+#section-trailer {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-trailer > iframe {
+  width: 86.6vw;
+  height: 36.9vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer > .div-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer > .div-logos > svg {
+  width: 32px;
+  height: 32px;
+  fill: red;
+  padding: 6px;
+  border: 2px solid red;
+  border-radius: 50vh;
 }
