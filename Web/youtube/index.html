@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <script src="./js/auxiliares.js"></script>
+  <script src="./js/helpers.js"></script>
   <body>
     <header id="top-bar">
       <section id="section-menu-toggle">
@@ -15,14 +15,14 @@
           <img
             src="./assets/svg/list.svg"
             alt="Botão Menu"
-            onload="fetchSvg(self)"
+            onload="fetchSvg(this)"
           />
         </button>
         <a href="#" id="a-youtube-logo">
           <img
             src="./assets/svg/youtube-logo.svg"
             alt="Logo do YouTube"
-            onload="fetchSvg(self)"
+            onload="fetchSvg(this)"
           />
         </a>
       </section>
@@ -35,7 +35,7 @@
               <img
                 src="./assets/svg/search.svg"
                 alt="Botão de Pesquisa"
-                onload="fetchSvg(self)"
+                onload="fetchSvg(this)"
               />
             </button>
           </div>
@@ -43,7 +43,7 @@
             <img
               src="./assets/svg/mic-fill.svg"
               alt="Botão de Microfone"
-              onload="fetchSvg(self)"
+              onload="fetchSvg(this)"
             />
           </button>
         </div>
@@ -54,7 +54,7 @@
           <img
             src="./assets/svg/plus-lg.svg"
             alt="Botão Criar"
-            onload="fetchSvg(self)"
+            onload="fetchSvg(this)"
           />
           <span>Criar</span>
         </button>
@@ -62,11 +62,11 @@
           <img
             src="./assets/svg/bell.svg"
             alt="Botão de Notificações"
-            onload="fetchSvg(self)"
+            onload="fetchSvg(this)"
           />
         </button>
         <button id="button-profile">
-          <img src="" alt="Botão" onload="fetchSvg(self)" />
+          <img src="" alt="Botão" onload="fetchSvg(this)" />
         </button>
       </section>
     </header>

@@ -2,6 +2,8 @@
 // Function to fetch an SVG file and insert it inline in the HTML
 const fetchSvg = (image) => {
   // Makes a request to fetch the content of the SVG file from the image's src
+  console.log(image);
+  console.log(image.src);
   fetch(image.src)
     .then((response) => response.text()) // Converts the response to text
     .then((response) => {

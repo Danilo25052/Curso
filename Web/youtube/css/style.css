@@ -2,6 +2,9 @@
   --background-color-1: #0f0f0f;
   --background-color-2: #212121;
   --background-color-3: #282828;
+  --top-bar-lateral-padding: 16px;
+  --top-bar-button-menu-toggle-padding: 8px;
+  --top-bar-youtube-logo-padding: 16px;
 }
 
 * {
@@ -27,10 +30,39 @@ header {
   justify-content: space-between;
 }
 
+#top-bar {
+  padding-left: var(--top-bar-lateral-padding);
+  padding-right: var(--top-bar-lateral-padding);
+}
+
 #top-bar > * {
   display: flex;
   flex-direction: row;
   width: fit-content;
+}
+
+#button-menu-toggle {
+  padding: var(--top-bar-button-menu-toggle-padding);
+  background-color: transparent;
+  border: none;
+  border-radius: 50vh;
+}
+
+#button-menu-toggle > svg,
+#a-youtube-logo > svg {
+  fill: white;
+  height: 24px;
+}
+
+#a-youtube-logo {
+  height: fit-content;
+  fill: white;
+  padding: var(--top-bar-youtube-logo-padding);
+}
+
+#div-search-box {
+  display: flex;
+  flex-direction: row;
 }
 
 main {
