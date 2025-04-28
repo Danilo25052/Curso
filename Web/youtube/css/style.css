@@ -5,6 +5,9 @@
   --top-bar-lateral-padding: 16px;
   --top-bar-button-menu-toggle-padding: 8px;
   --top-bar-youtube-logo-padding: 16px;
+  --search-bar-border-color: hsl(0, 0%, 18.82%);
+  --search-box-text-color: hsl(0, 0%, 18.82%);
+  --search-box-icon-color: #ffffff;
 }
 
 * {
@@ -63,6 +66,37 @@ header {
 #div-search-box {
   display: flex;
   flex-direction: row;
+}
+
+#div-search-box * {
+  color: var(--search-box-text-color);
+}
+#div-search-box svg {
+  fill: var(--search-box-icon-color);
+}
+
+#div-search-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+#div-search-bar > * {
+  border: none;
+  border: 1px solid var(--search-bar-border-color);
+}
+#div-search-bar > *:first-child {
+  border-right: none;
+  border-top-left-radius: 50vh;
+  border-bottom-left-radius: 50vh;
+}
+#div-search-bar > *:last-child {
+  border-top-right-radius: 50vh;
+  border-bottom-right-radius: 50vh;
+}
+
+#button-mic {
+  border: none;
+  border-radius: 50vh;
 }
 
 main {
