@@ -5,9 +5,12 @@
   --top-bar-lateral-padding: 16px;
   --top-bar-button-menu-toggle-padding: 8px;
   --top-bar-youtube-logo-padding: 16px;
+  --button-background-color-1: #222222;
+  --button-background-color-2: #272727;
+  --button-search-bar-keyboard-fill-color: #7b7b7b;
+  --top-bar-icon-color: #ffffff;
   --search-bar-border-color: hsl(0, 0%, 18.82%);
   --search-box-text-color: hsl(0, 0%, 18.82%);
-  --search-box-icon-color: #ffffff;
 }
 
 * {
@@ -43,6 +46,9 @@ header {
   flex-direction: row;
   width: fit-content;
 }
+#top-bar svg {
+  fill: var(--top-bar-icon-color);
+}
 
 #button-menu-toggle {
   padding: var(--top-bar-button-menu-toggle-padding);
@@ -66,19 +72,25 @@ header {
 #div-search-box {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 #div-search-box * {
   color: var(--search-box-text-color);
 }
-#div-search-box svg {
-  fill: var(--search-box-icon-color);
+
+#div-search-box > *,
+#section-profile > * {
+  height: 40px;
 }
 
 #div-search-bar {
   display: flex;
   flex-direction: row;
   gap: 0px;
+}
+#div-search-bar > button {
+  background-color: var(--button-background-color-1);
 }
 #div-search-bar > * {
   border: none;
@@ -94,7 +106,52 @@ header {
   border-bottom-right-radius: 50vh;
 }
 
+#div-search-bar-input-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 16px;
+}
+
+#div-search-bar-input-box * {
+  background-color: transparent;
+  border: none;
+}
+
+#form-search-bar,
+#form-search-bar > * {
+  height: 24px;
+  font-size: 18px;
+  padding: 0px;
+}
+
+#button-search-bar-keyboard {
+  width: 24px;
+  box-sizing: content-box;
+  padding: 6px;
+  padding-right: 10px;
+  background-color: transparent;
+}
+
+#button-search-bar-keyboard svg {
+  height: 100%;
+  width: 100%;
+  fill: var(--button-search-bar-keyboard-fill-color);
+}
+
 #button-mic {
+  width: 40px;
+  border: none;
+  border-radius: 50vh;
+  background-color: var(--button-background-color-2);
+}
+
+#section-profile {
+  align-items: center;
+}
+
+#section-profile button {
+  background-color: transparent;
   border: none;
   border-radius: 50vh;
 }
