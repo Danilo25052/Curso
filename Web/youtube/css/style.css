@@ -28,6 +28,15 @@ body {
   grid-template-rows: auto 1fr;
 }
 
+button {
+  padding: 0px;
+}
+
+.div-standard-svg-size {
+  width: 24px;
+  height: 24px;
+}
+
 header {
   grid-area: topbar;
   background-color: darkgreen;
@@ -73,6 +82,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 16px;
 }
 
 #div-search-box * {
@@ -88,9 +98,6 @@ header {
   display: flex;
   flex-direction: row;
   gap: 0px;
-}
-#div-search-bar > button {
-  background-color: var(--button-background-color-1);
 }
 #div-search-bar > * {
   border: none;
@@ -111,6 +118,17 @@ header {
   flex-direction: row;
   align-items: center;
   padding-left: 16px;
+  justify-content: space-between;
+  width: 400px;
+}
+
+#div-search-bar-input-box form,
+#div-search-bar-input-box input {
+  width: 100%;
+}
+
+#div-search-bar-input-box *:focus {
+  outline: none;
 }
 
 #div-search-bar-input-box * {
@@ -139,15 +157,36 @@ header {
   fill: var(--button-search-bar-keyboard-fill-color);
 }
 
+#button-search {
+  width: 64px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-background-color-2);
+}
+
+#button-search > * {
+  height: 24px;
+  width: 24px;
+}
+
 #button-mic {
   width: 40px;
   border: none;
   border-radius: 50vh;
   background-color: var(--button-background-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #section-profile {
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 #section-profile button {
