@@ -11,6 +11,9 @@
   --top-bar-icon-color: #ffffff;
   --search-bar-border-color: hsl(0, 0%, 18.82%);
   --search-box-text-color: hsl(0, 0%, 18.82%);
+  --button-create-background-color: #272727;
+  --button-create-text-color: #ffffff;
+  --button-create-font-size: 15px;
 }
 
 * {
@@ -32,22 +35,23 @@ button {
   padding: 0px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .div-standard-svg-size {
   width: 24px;
   height: 24px;
 }
 
-header {
+#top-bar {
   grid-area: topbar;
-  background-color: darkgreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-#top-bar {
   padding-left: var(--top-bar-lateral-padding);
   padding-right: var(--top-bar-lateral-padding);
+  align-items: center;
 }
 
 #top-bar > * {
@@ -182,6 +186,11 @@ header {
   justify-content: center;
 }
 
+#button-mic > * {
+  width: 18px;
+  height: 18px;
+}
+
 #section-profile {
   align-items: center;
   display: flex;
@@ -189,10 +198,52 @@ header {
   gap: 8px;
 }
 
+#section-profile {
+  height: 40px;
+}
+
 #section-profile button {
-  background-color: transparent;
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 50vh;
+}
+
+#button-create {
+  gap: 6px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 16px;
+  background-color: var(--button-create-background-color);
+  border-radius: 50vh;
+  font-weight: bold;
+  font-size: var(--button-create-font-size);
+  line-height: var(--button-create-font-size);
+  color: white;
+}
+
+#button-notifications,
+#button-profile {
+  background-color: transparent;
+}
+
+#button-notifications {
+  flex-direction: row;
+}
+
+#button-profile {
+  width: 60px;
+  height: 34px;
+}
+
+#button-profile img {
+  border: none;
+  border-radius: 50vh;
+  height: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 main {
@@ -206,6 +257,8 @@ main {
   grid-area: sidemenu;
   background-color: yellow;
 }
+
+/* Se o side menu estiver expandido, exibir todas as seções e esconder o menu principal */
 
 #section-videos-list {
   grid-area: videoslist;
