@@ -14,6 +14,12 @@
   --button-create-background-color: #272727;
   --button-create-text-color: #ffffff;
   --button-create-font-size: 15px;
+  --side-menu-items-color: #ffffff;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-VariableFont_wdthwght.ttf);
 }
 
 * {
@@ -29,6 +35,7 @@ body {
     "main";
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 button {
@@ -255,7 +262,42 @@ main {
 
 #side-menu {
   grid-area: sidemenu;
-  background-color: yellow;
+  color: var(--side-menu-items-color);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.a-side-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.div-side-menu-item-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-side-menu-item-icon {
+  gap: 8px;
+}
+
+.h3-side-menu-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.div-side-menu-item-icon {
+  width: 24px;
+  aspect-ratio: 1 / 1;
+}
+
+.span-side-menu-item-icon {
+  font-weight: 500;
 }
 
 /* Se o side menu estiver expandido, exibir todas as seções e esconder o menu principal */

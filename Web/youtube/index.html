@@ -20,7 +20,7 @@
         </button>
         <a href="#" id="a-youtube-logo">
           <img
-            src="./assets/svg/youtube-logo.svg"
+            src="./assets/svg/logos/youtube-logo-with-name.svg"
             alt="Logo do YouTube"
             onload="fetchSvg(this)"
           />
@@ -97,11 +97,316 @@
 
     <main>
       <section id="side-menu">
-        <section id="section-main-pages"></section>
-        <section id="section-you"></section>
-        <section id="section-explore"></section>
-        <section id="section-more-from-youtube"></section>
-        <section id="section-settings"></section>
+        <section id="section-main-pages">
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/home-fill.svg"
+                alt="Ícone de Casa"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Início</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/shorts-outline.svg"
+                alt="Ícone do YouTube Shorts"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Shorts</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/subscriptions-outline.svg"
+                alt="Ícone de Tela"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Inscrições</span>
+          </a>
+        </section>
+
+        <section id="section-you">
+          <div class="div-side-menu-item-title">
+            <h3 class="h3-side-menu-item-title">Você</h3>
+
+            <div class="div-side-menu-item-title-chevron">
+              <img
+                src="./assets/svg/chevron-right.svg"
+                alt="Ícone de divisa para a direita (>)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+          </div>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/history.svg"
+                alt="Ícone de Histórico"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Histórico</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/playlist.svg"
+                alt="Ícone de Lista de Reprodução"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Playlists</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/clock-outline.svg"
+                alt="Ícone de Relógio"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Assistir mais tarde</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/like-outline.svg"
+                alt="Ícone de Gostei"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Vídeos com "Gostei"</span>
+          </a>
+        </section>
+
+        <section id="section-explore">
+          <div class="div-side-menu-item-title">
+            <h3 class="h3-side-menu-item-title">Explorar</h3>
+
+            <div class="div-side-menu-item-title-chevron">
+              <img
+                src="./assets/svg/chevron-right.svg"
+                alt="Ícone de divisa para a direita (>)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+          </div>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/fire-ball-outline.svg"
+                alt="Ícone de Bola de Fogo (Em Alta)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Em alta</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/shopping-bag-outline.svg"
+                alt="Ícone de Sacola de Compras"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Shopping</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/musical-note-outline.svg"
+                alt="Ícone de Nota Musical"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Música</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/movie-outline.svg"
+                alt="Ícone de Claquete (Filme)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Filmes</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/signal.svg"
+                alt="Ícone de Sinal (Ao vivo)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Ao vivo</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/gamepad-outline.svg"
+                alt="Ícone de Gamepad"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Jogos</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/newspaper-outline.svg"
+                alt="Ícone de Jornal"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Notícias</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/trophy-outline.svg"
+                alt="Ícone de Troféu"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Esportes</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/mortarboard-outline.svg"
+                alt="Ícone de Capelo (Chapéu de Formatura)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Cursos</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/podcast.svg"
+                alt="Ícone de Sinal (Podcasts)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Podcasts</span>
+          </a>
+        </section>
+
+        <section id="section-more-from-youtube">
+          <div class="div-side-menu-item-title">
+            <h3 class="h3-side-menu-item-title">Mais do YouTube</h3>
+
+            <div class="div-side-menu-item-title-chevron">
+              <img
+                src="./assets/svg/chevron-right.svg"
+                alt="Ícone de divisa para a direita (>)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+          </div>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/logos/youtube-logo.svg"
+                alt="Ícone do YouTube Premium"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">YouTube Premium</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/logos/youtube-music-logo.svg"
+                alt="Ícone do YouTube Music"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">YouTube Music</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/logos/youtube-kids-logo.svg"
+                alt="Ícone do YouTube Kids"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">YouTube Kids</span>
+          </a>
+        </section>
+
+        <section id="section-settings">
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/settings-outline.svg"
+                alt="Ícone de Engrenagem (Configurações)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Settings</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/flag-outline.svg"
+                alt="Ícone de Bandeira"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Report history</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/question-circle-outline.svg"
+                alt="Ícone de Pergunta (?)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Help</span>
+          </a>
+
+          <a class="a-side-menu-item">
+            <div class="div-side-menu-item-icon">
+              <img
+                src="./assets/svg/side-menu/exclamation-rectangle.svg"
+                alt="Ícone de Resposta (Feedback)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+            <span class="span-side-menu-item-icon">Send feedback</span>
+          </a>
+        </section>
+
         <section id="section-about"></section>
       </section>
 
