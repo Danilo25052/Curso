@@ -95,7 +95,7 @@
       </section>
     </header>
 
-    <main>
+    <main class="fill-remaining-space">
       <section id="side-menu">
         <section id="section-main-pages">
           <a
@@ -424,10 +424,19 @@
         </section>
       </section>
 
-      <section id="section-videos-list">
+      <section id="section-main-right-box">
         <section id="section-filters">
           <div id="div-filters-items">
-            <button>Tudo</button>
+            <button
+              style="
+                background-color: var(
+                  --filters-items-highlight-background-color
+                );
+                color: var(--filters-items-highlight-text-color);
+              "
+            >
+              Tudo
+            </button>
             <button>Jogos</button>
             <button>Trailer</button>
             <button>Ao Vivo</button>
@@ -437,38 +446,44 @@
             <button>Programação</button>
           </div>
 
-          <button id="button-next-filters">
-            <div>
-              <img
-                src="./assets/svg/chevron-right.svg"
-                alt="Ícone de divisa para a direita (>)"
-                onload="fetchSvg(this)"
-              />
-            </div>
-          </button>
+          <div>
+            <div id="section-filters-fade"></div>
+
+            <button id="button-next-filters">
+              <div>
+                <img
+                  src="./assets/svg/chevron-right.svg"
+                  alt="Ícone de divisa para a direita (>)"
+                  onload="fetchSvg(this)"
+                />
+              </div>
+            </button>
+          </div>
         </section>
 
-        <section class="section-ads"></section>
+        <section id="section-videos-list" class="fill-remaining-space">
+          <section class="section-ads"></section>
 
-        <section class="section-videos">
-          <div class="div-video-card"></div>
-          <div class="div-video-card"></div>
-          <div class="div-video-card"></div>
-          <div class="div-video-card"></div>
-        </section>
+          <section class="section-videos">
+            <div class="div-video-card"></div>
+            <div class="div-video-card"></div>
+            <div class="div-video-card"></div>
+            <div class="div-video-card"></div>
+          </section>
 
-        <section class="section-shorts">
-          <div class="div-shorts-card"></div>
-          <div class="div-shorts-card"></div>
-          <div class="div-shorts-card"></div>
-          <div class="div-shorts-card"></div>
-        </section>
+          <section class="section-shorts">
+            <div class="div-shorts-card"></div>
+            <div class="div-shorts-card"></div>
+            <div class="div-shorts-card"></div>
+            <div class="div-shorts-card"></div>
+          </section>
 
-        <section class="section-videos">
-          <div class="div-video-card"></div>
-          <div class="div-video-card"></div>
-          <div class="div-video-card"></div>
-          <div class="div-video-card"></div>
+          <section class="section-videos">
+            <div class="div-video-card"></div>
+            <div class="div-video-card"></div>
+            <div class="div-video-card"></div>
+            <div class="div-video-card"></div>
+          </section>
         </section>
       </section>
     </main>
