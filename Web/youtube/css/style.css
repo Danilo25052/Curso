@@ -15,6 +15,9 @@
   --button-create-text-color: #ffffff;
   --button-create-font-size: 15px;
   --side-menu-items-color: #ffffff;
+  --side-menu-section-divisor-color: rgba(255, 255, 255, 0.2);
+  --guide-links-text-color: #aaaaaa;
+  --div-copyright-text-color: #717171;
 }
 
 @font-face {
@@ -111,7 +114,6 @@ button:hover {
   gap: 0px;
 }
 #div-search-bar > * {
-  border: none;
   border: 1px solid var(--search-bar-border-color);
 }
 #div-search-bar > *:first-child {
@@ -268,6 +270,13 @@ main {
   /* align-items: center; */
 }
 
+#side-menu > * {
+  border-bottom: 1px solid var(--side-menu-section-divisor-color);
+}
+#side-menu > *:last-child {
+  border-bottom: none;
+}
+
 .a-side-menu-item {
   display: flex;
   flex-direction: row;
@@ -298,6 +307,20 @@ main {
 
 .span-side-menu-item-icon {
   font-weight: 500;
+}
+
+#section-about {
+}
+
+#div-guide-links-primary,
+#div-guide-links-secondary {
+  padding: 16px 24px 0px 24px;
+}
+
+#div-copyright {
+  padding: 16px 24px;
+  font-size: 12px;
+  color: var(--div-copyright-text-color);
 }
 
 /* Se o side menu estiver expandido, exibir todas as seções e esconder o menu principal */
