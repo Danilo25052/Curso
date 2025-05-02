@@ -1,0 +1,13 @@
+Link da thumbnail: https://i.ytimg.com/vi/SZz79RJ3BFE/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-DoACuAiKAgwIABABGHIgWygnMA8=&rs=AOn4CLC7wc4oQTsA1AWV0L4gfe7TN14QiQ
+Link do vídeo (on hover): https://www.youtube.com/watch?v=SZz79RJ3BFE
+Título: Curta o Surreal, a mais alta montanha-russa aquática do mundo. Ingresso + lanche grátis
+Link do ícone do anunciante: https://yt3.ggpht.com/kR6OIpL52fTbTttQNT8_69EOaLJcdpeof50SwJIH3TQNvjIEZTBHCQaIthPtIq02uSU46v5qRA=s68-c-k-c0x00ffffff-no-rj
+Tipo: Patrocinado
+Separador: ·
+Anunciante: Beach Park
+
+Botões:
+- Assistir
+- Comprar Agora
+
+Overflow text ending with "..."
