@@ -14,7 +14,7 @@
   --button-create-background-color: #272727;
   --button-create-text-color: #ffffff;
   --button-create-font-size: 15px;
-  --side-menu-items-color: #ffffff;
+  --side-menu-items-color: #f1f1f1;
   --side-menu-section-divisor-color: rgba(255, 255, 255, 0.2);
   --guide-links-text-color: #aaaaaa;
   --div-copyright-text-color: #717171;
@@ -39,6 +39,10 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   font-family: "Roboto", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -272,6 +276,7 @@ main {
 
 #side-menu > * {
   border-bottom: 1px solid var(--side-menu-section-divisor-color);
+  padding: 12px;
 }
 #side-menu > *:last-child {
   border-bottom: none;
@@ -283,11 +288,19 @@ main {
   align-items: center;
   gap: 24px;
   font-size: 14px;
+  line-height: 100%;
+  padding: 8px 12px;
+}
+
+.a-side-menu-item:hover {
+  background-color: var(--button-background-color-2);
+  border-radius: 10px;
 }
 
 .div-side-menu-item-title {
   display: flex;
   flex-direction: row;
+  padding: 6px 12px 4px 12px;
 }
 
 .div-side-menu-item-icon {
@@ -298,6 +311,7 @@ main {
   font-size: 16px;
   font-weight: 600;
   overflow: hidden;
+  padding-right: 8px;
 }
 
 .div-side-menu-item-icon {
@@ -314,9 +328,24 @@ main {
 
 #div-guide-links-primary,
 #div-guide-links-secondary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 16px 24px 0px 24px;
-  font-size: px;
+}
+
+#div-guide-links-primary > a,
+#div-guide-links-secondary > a {
+  margin-right: 8px;
+  font-size: 13px;
+  color: var(--guide-links-text-color);
   line-height: 18px;
+  font-weight: bold;
+}
+
+#div-guide-links-primary > a:last-child,
+#div-guide-links-secondary > a:last-child {
+  margin-right: 0px;
 }
 
 #div-copyright {

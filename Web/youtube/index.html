@@ -98,7 +98,13 @@
     <main>
       <section id="side-menu">
         <section id="section-main-pages">
-          <a class="a-side-menu-item">
+          <a
+            class="a-side-menu-item"
+            style="
+              background-color: var(--button-background-color-2);
+              border-radius: 10px;
+            "
+          >
             <div class="div-side-menu-item-icon">
               <img
                 src="./assets/svg/side-menu/home-fill.svg"
@@ -106,7 +112,9 @@
                 onload="fetchSvg(this)"
               />
             </div>
-            <span class="span-side-menu-item-icon">Início</span>
+            <span class="span-side-menu-item-icon" style="font-weight: bold"
+              >Início</span
+            >
           </a>
 
           <a class="a-side-menu-item">
@@ -193,14 +201,6 @@
         <section id="section-explore">
           <div class="div-side-menu-item-title">
             <h3 class="h3-side-menu-item-title">Explorar</h3>
-
-            <div class="div-side-menu-item-title-chevron">
-              <img
-                src="./assets/svg/chevron-right.svg"
-                alt="Ícone de divisa para a direita (>)"
-                onload="fetchSvg(this)"
-              />
-            </div>
           </div>
 
           <a class="a-side-menu-item">
@@ -317,14 +317,6 @@
         <section id="section-more-from-youtube">
           <div class="div-side-menu-item-title">
             <h3 class="h3-side-menu-item-title">Mais do YouTube</h3>
-
-            <div class="div-side-menu-item-title-chevron">
-              <img
-                src="./assets/svg/chevron-right.svg"
-                alt="Ícone de divisa para a direita (>)"
-                onload="fetchSvg(this)"
-              />
-            </div>
           </div>
 
           <a class="a-side-menu-item">
@@ -434,10 +426,26 @@
 
       <section id="section-videos-list">
         <section id="section-filters">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <div id="div-filters-items">
+            <button>Tudo</button>
+            <button>Jogos</button>
+            <button>Trailer</button>
+            <button>Ao Vivo</button>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>Programação</button>
+          </div>
+
+          <button id="button-next-filters">
+            <div>
+              <img
+                src="./assets/svg/chevron-right.svg"
+                alt="Ícone de divisa para a direita (>)"
+                onload="fetchSvg(this)"
+              />
+            </div>
+          </button>
         </section>
 
         <section class="section-ads"></section>
