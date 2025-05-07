@@ -274,6 +274,7 @@ main {
 }
 
 #side-menu {
+  min-width: 240px;
   width: 240px;
   height: 100%;
   color: var(--side-menu-items-color);
@@ -365,8 +366,6 @@ main {
 /* Se o side menu estiver expandido, exibir todas as seções e esconder o menu principal */
 
 #section-main-right-box {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -396,18 +395,22 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
   gap: 12px;
 }
 
 #div-next-filters {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
 }
 
-#div-filters-fade {
+#div-next-filters-fade {
+  position: absolute;
   height: 100%;
   aspect-ratio: 1 / 1;
   background: linear-gradient(
@@ -415,10 +418,11 @@ main {
     var(--background-color-1) 20%,
     rgba(33, 33, 33, 0) 80%
   );
-  transform: translateX(-100%);
+  transform: translate(-100%, 0%);
 }
 
 #div-filters-items > * {
+  white-space: nowrap;
   background-color: var(--filters-items-background-color);
   color: var(--filters-items-text-color);
   font-weight: bold;
@@ -438,7 +442,6 @@ main {
   border-radius: 50vh;
   background-color: transparent;
   color: var(--button-next-filters-color);
-  transform: translateY(-100%);
 }
 
 #button-next-filters > div {
@@ -451,27 +454,6 @@ main {
 
 #section-videos-list {
   background-color: red;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#section-videos-list > * {
-  margin: 0px 24px;
-}
-
-.section-videos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.section-videos > div {
-  width: calc(25% - 12px);
-  height: fit-content;
-  min-height: 100px;
-  background-color: #717171;
 }
 
 .fade {
