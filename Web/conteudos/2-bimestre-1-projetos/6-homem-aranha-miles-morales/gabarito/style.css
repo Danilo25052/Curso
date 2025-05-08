@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+header{
+  background-image: url(banner.png);
+  height: 100vh;
+  padding: 40px;
+}
+.cabecalho ul{
+  display: flex;
+  gap: 48px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.red{
+  color: red;
+}
+.white{
+  text-decoration: line-through 3px solid red;
+}
+
+.spider{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#img{
+  width: 500px;
+  margin-top: 70px;
+}
+#watch{
+  width: 100px;
+}
+.miles{
+  color: white;
+  width: 400px;
+}
+.container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.carrosel{
+  display: flex;
+  align-items: center;
+
+}
+.modal img{
+width: 300px;
+}
+.carrosel .modal img {
+  display: none;
+}
+
+#mile18:target ~ .modal img[src="mile18.png"],
+#mile20:target ~ .modal img[src="mile20.png"],
+#mile6:target ~ .modal img[src="mile6.png"],
+#mile15:target ~ .modal img[src="mile15.png"],
+#mile22:target ~ .modal img[src="mile22.png"] {
+  display: block;
+}
+
+
+.miranha{
+  width: 70px;
+  border-radius: 50%;
+}
+.icone{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.icone a {
+  position: relative; 
+  /* Define um ambiente para posicionamento absoluto
+  
+  Mantém a organização na linha
+  */
+  display: inline-block; 
+}
+
+.icone img {
+  display: block; 
+}
+
+.icone .miranha {
+  position: absolute; /* Faz a imagem ficar sobreposta */
+  top: 50%; /* Ajusta a posição superior */
+  left: 50%; /* Alinha com o centro do indicador */
+  transform: translate(-50%, -50%); /* Centraliza sobre o fundo */
+  width: 80%; /* Ajusta o tamanho do indicador sobreposto */
+  height: auto;
+}
