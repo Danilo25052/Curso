@@ -8,18 +8,22 @@
   --background-gradient-color-2: #f47777;
   --experience-bars-border-color: rgba(255, 255, 255, 19%);
   --contact-button-font-size: 20px;
-  --experience-bars-font-size: 12px;
+  --body-gap: 24px;
+  --body-padding: 32px;
   /* ----- Desktop ----- */
-  --desktop-h2-font-size: 36px;
-  --desktop-h2-font-weight: ;
-  --desktop-h3-font-size: 30px;
-  --desktop-h3-font-weight: ;
-  --desktop-h4-font-size: 24px;
-  --desktop-h4-font-weight: ;
-  --desktop-text-1-font-size: 24px;
+  --desktop-h2-font-size: 2.8vw;
+  --desktop-h2-font-weight: 600;
+  --desktop-h3-font-size: 2vw;
+  --desktop-h3-font-weight: 400;
+  --desktop-h4-font-size: 1.8vw;
+  --desktop-h4-font-weight: 600;
+  --desktop-text-1-font-size: 1.6vw;
   --desktop-text-1-font-weight: ;
-  --desktop-text-2-font-size: 24px;
-  --desktop-text-2-font-weight: ;
+  --desktop-text-2-font-size: 1.6vw;
+  --desktop-text-2-font-weight: 300;
+  --desktop-second-column-max-width: 325px;
+  --desktop-section-profile-height: 27vh;
+  --desktop-experience-bars-font-size: 1.2em;
   /* ----- Mobile ----- */
   --mobile-h2-font-size: 28px;
   --mobile-h2-font-weight: 600;
@@ -31,6 +35,7 @@
   --mobile-text-1-font-weight: 400;
   --mobile-text-2-font-size: 18px;
   --mobile-text-2-font-weight: 300;
+  --mobile-experience-bars-font-size: 1em;
 }
 
 /* --------------- General --------------- */
@@ -55,14 +60,15 @@ h4 {
 .text-2 {
   font-size: var(--mobile-text-2-font-size);
   font-weight: var(--mobile-text-2-font-weight);
+  text-wrap: wrap;
 }
 
 body {
   background-color: var(--mobile-background-color);
   color: var(--text-color-1);
   min-height: 100vh;
-  padding: 32px;
-  gap: 24px;
+  padding: var(--body-padding);
+  gap: var(--body-gap);
   display: flex;
   flex-direction: column;
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -108,8 +114,8 @@ ul {
 }
 
 .div-contact-icon > * {
-  height: 20px;
-  width: 20px;
+  height: var(--mobile-text-1-font-size);
+  width: var(--mobile-text-1-font-size);
 }
 
 .div-contact-icon-fill {
@@ -162,12 +168,18 @@ ul {
 }
 
 #ul-experience-bars {
-  font-size: var(--experience-bars-font-size);
+  font-size: var(--mobile-experience-bars-font-size);
   gap: 16px;
 }
 
 #ul-experience-bars > li {
-  height: 24px;
+  height: fit-content;
+  padding: 2px;
+}
+
+.experience-bars-background,
+.experience-bars-fill {
+  height: 100%;
 }
 
 .experience-bars-background,
@@ -225,32 +237,89 @@ ul {
 /* --------------- Mobile --------------- */
 
 /* --------------- Desktop --------------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   body {
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: clip;
     background-color: var(--desktop-background-color);
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "profile languages"
-      "experience education"
-      "experience contact";
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #section-profile,
+  #section-experience {
+    width: calc(
+      100vw -
+        calc(
+          var(--desktop-second-column-max-width) +
+            calc(var(--body-gap) + calc(2 * var(--body-padding)))
+        )
+    );
+    max-width: 100vh;
+    flex-grow: 1;
+  }
+  #section-languages,
+  #section-education,
+  #section-contact {
+    max-width: var(--desktop-second-column-max-width);
+  }
+  #section-profile {
+    order: 0;
+  }
+  #section-experience {
+    order: 1;
+  }
+  #section-languages {
+    order: 2;
+  }
+  #section-education {
+    order: 3;
+  }
+  #section-contact {
+    order: 4;
   }
 
   #section-profile {
-    grid-area: profile;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
   }
+
+  #section-profile,
+  #img-profile {
+    height: var(--desktop-section-profile-height);
+  }
+
+  #img-profile {
+    border: 1px solid white;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+  }
+
   #section-experience {
-    grid-area: experience;
+    height: calc(
+      100vh -
+        calc(
+          var(--desktop-section-profile-height) +
+            calc(var(--body-gap) + calc(2 * var(--body-padding)))
+        )
+    );
   }
-  #section-languages {
-    grid-area: languages;
+
+  #ul-experience-bars {
+    font-size: var(--desktop-experience-bars-font-size);
   }
-  #section-education {
-    grid-area: education;
+
+  #section-experience * {
+    text-align: left;
   }
-  #section-contact {
-    grid-area: contact;
+
+  .div-icon svg {
+    height: var(--desktop-text-1-font-size);
+    width: var(--desktop-text-1-font-size);
   }
 
   h2 {
