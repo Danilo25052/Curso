@@ -1,0 +1,26 @@
+1. Lista de Compras / Estoque
+2. Loja Online e Carrinho de Compras
+3. Gerenciador de Tarefas (To-Do List), tipo o Trello
+4. Biblioteca
+5. Agenda de contatos
+6. Controle de Notas de Alunos
+7. Encurtador de Links
+8. Conversor de Moedas
+9. Quiz Online
+10. Sistemas de Finanças
+
+CRUD -> Adicionar, Listar, Atualizar, Deletar
+
+Tema Escolhido para todos: Tema 4
+
+Tema Escolhido para a Equipe de Danilo: Tema 6
+
+Equipe 1: Tema 5
+Equipe 2: Tema 3
+Equipe 3: Tema 8
+Equipe 4: Tema 1
+Equipe 5: Tema 9
+Equipe 6: Tema 2
+Equipe 7: Tema 6
+Equipe 8: Tema 7
+Equipe 9: Tema 10
